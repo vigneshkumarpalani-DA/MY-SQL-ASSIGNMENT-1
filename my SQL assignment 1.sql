@@ -1,4 +1,4 @@
--- Database create பண்ணி use பண்ண:
+-- CREATING AND USING THE DATA BASE --
 CREATE DATABASE employee;
 USE employee;
 
@@ -20,7 +20,7 @@ CREATE TABLE employees (
     employee_name VARCHAR(50) NOT NULL,
     gender ENUM('M', 'F') NOT NULL,
     age INT CHECK (age >= 18),
-    hire_date DATE DEFAULT (CURRENT_DATE),
+    hire_date DATE DEFAULT CURRENT_DATE,
     designation VARCHAR(100),
     department_id INT,
     location_id INT,
